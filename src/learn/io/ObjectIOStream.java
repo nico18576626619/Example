@@ -26,8 +26,6 @@ public class ObjectIOStream {
 			
 			ips=new ObjectInputStream(new FileInputStream("d:/f.txt"));
 			try {
-				
-				System.out.println(ips.readObject());
 				System.out.println(ips.readObject());
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
