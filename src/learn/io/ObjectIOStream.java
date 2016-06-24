@@ -22,10 +22,12 @@ public class ObjectIOStream {
 			ops=new ObjectOutputStream(new FileOutputStream("d:/f.txt"));
 			//写入或者读取的对象必须实现Serializable,可串行化
 			ops.writeObject(new Student("张三",18));
-		
+			ops.writeObject(new Student("李四",19));
 			
 			ips=new ObjectInputStream(new FileInputStream("d:/f.txt"));
 			try {
+				
+				System.out.println(ips.readObject());
 				System.out.println(ips.readObject());
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
