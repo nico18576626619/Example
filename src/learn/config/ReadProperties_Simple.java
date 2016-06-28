@@ -1,4 +1,4 @@
-package config;
+package learn.config;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
