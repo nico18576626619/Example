@@ -16,7 +16,8 @@ public class ReadProperties_Simple {
 		//1、通过ResourceBundle.getBundle()静态方法来获取（ResourceBundle是一个抽象类），这种方式来获取properties属性文件不需要加.properties后缀名，只需要文件名即可。
 		
 		ResourceBundle rb=ResourceBundle.getBundle("config");//如何和类放在同一目录直接填写文件名即可，如果是放在某个包下，则path未xx/xx/文件名
-		System.out.println(rb.getString("hitao.api.host.port"));
+		System.out.println(rb.getString("dataFolder"));
+		
 		
 	}
 

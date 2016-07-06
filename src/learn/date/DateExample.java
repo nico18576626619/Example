@@ -2,6 +2,7 @@ package learn.date;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import org.slf4j.Logger;
@@ -37,7 +38,7 @@ public class DateExample {
 		int i=date1.compareTo(date);
 		System.out.println(i);
 		
-		
+		Calendar
 		
 		
 		
