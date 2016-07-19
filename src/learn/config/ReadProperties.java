@@ -36,8 +36,10 @@ public class ReadProperties {
 			
 			//从输入流中读取属性列表（键和元素对）。
 			pro.load(in);
+			//调试查看流中的数据
+			pro.list(System.out);
 			
-			System.out.println(pro.getProperty("hitao.api.host"));
+//			System.out.println(pro.getProperty("hitao.api.host"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
